@@ -12,7 +12,7 @@
     <color name="yellow_200">#B8860B</color> <!-- Kuning lebih gelap -->
     <color name="yellow_700">#8B6508</color> <!-- Versi lebih tua dari kuning -->
 
-    <color name="green_200">#236B44</color> <!-- Hijau tua yang lebih kalem -->
+    <color name="green_200">#236B44</color>
 
     <!-- Warna untuk dark mode -->
     <color name="dark_background">#121212</color>
