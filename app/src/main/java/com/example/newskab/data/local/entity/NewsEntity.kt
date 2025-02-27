@@ -19,6 +19,9 @@ data class NewsEntity(
     @field:ColumnInfo(name = "deskripsi")
     val deskripsi: String,
 
+    @field:ColumnInfo(name = "status")
+    val status: String,
+
     @field:ColumnInfo(name = "multimedias")
     val multimedias: List<MultimediasItem>,
 

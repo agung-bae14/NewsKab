@@ -19,6 +19,9 @@ data class NewsResponseItem(
 	@field:SerializedName("judul")
 	val judul: String,
 
+	@field:SerializedName("status")
+	val status: String,
+
 	@field:SerializedName("multimedias")
 	val multimedias: List<MultimediasItem>
 )
@@ -35,5 +38,5 @@ data class MultimediasItem(
 	val type: String
 ) {
 	val fullPath: String
-		get() = "http://192.168.14.123:8000/storage/$path"
+		get() = "http://192.168.1.9:8000/storage/$path"
 }

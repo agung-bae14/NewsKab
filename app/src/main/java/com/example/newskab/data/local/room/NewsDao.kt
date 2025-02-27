@@ -10,7 +10,7 @@ import com.example.newskab.data.local.entity.NewsEntity
 
 @Dao
 interface NewsDao {
-    @Query ("SELECT * FROM news")
+    @Query ("SELECT * FROM news where status = 1")
     fun getNews(): LiveData<List<NewsEntity>>
 
     @Query("SELECT * FROM news where bookmarked = 1")

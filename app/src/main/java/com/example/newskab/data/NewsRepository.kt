@@ -36,7 +36,7 @@ class NewsRepository private constructor(
                             val multimediasList = article.multimedias.map { multimedia ->
                                 MultimediasItem(
                                     id = multimedia.id,
-                                    fullpath = "http://192.168.14.123:8000/storage/${multimedia.path}",
+                                    fullpath = "http://192.168.1.9:8000/storage/${multimedia.path}",
                                     type = multimedia.type
                                 )
                             }
@@ -44,6 +44,7 @@ class NewsRepository private constructor(
                             val news = NewsEntity(
                                 judul = article.judul,
                                 deskripsi = article.deskripsi,
+                                status = article.status,
                                 multimedias = multimediasList,
                                 isBookmarked
                             )
